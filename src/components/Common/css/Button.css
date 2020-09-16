@@ -1,0 +1,28 @@
+.button {
+  border:none;
+  padding: .5em 2em;
+  margin: 20px auto;
+  border-radius: 5px;
+  /* width: 150px; */
+  background: none;
+}
+
+.btn-blk {
+  /* border: 1px solid black; */
+  color: white;
+}
+
+.btn-blk:hover {
+  background: black;
+  color: white;
+}
+
+.btn-wht {
+  border: 1px solid white;
+  color: white;
+}
+
+.btn-wht:hover {
+  background: white;
+  color: black;
+}
