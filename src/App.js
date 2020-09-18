@@ -6,7 +6,8 @@ import Login from "./pages/login";
 import Logout from "./pages/Logout";
 import Signup from "./pages/signup";
 import Header from "./components/Common/NavbarApp/NavbarApp";
-import ProductCards from "./components/productCard";
+import Products from "./pages/products";
+import ProductDetail from "./pages/product-details";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -14,7 +15,8 @@ function App() {
     <div className="App">
       <Header/>
       <Switch>
-        <Route path="/products" component={ProductCards} />
+        <Route path="/detail/:id" component={ProductDetail} />
+        <Route path="/products" component={Products} />
         <Route path="/login" component={Login} />
         <Route path="/logout" component={Logout} />
         <Route path="/register" component={Signup} />

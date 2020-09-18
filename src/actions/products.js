@@ -29,10 +29,12 @@ export const start = () => ({
   }
 
   export const getProducts = () => {
+    console.log("tol")
       return (dispatch) => {
         dispatch(start())
           axios.get("/products/")
           .then(res => {
+            console.log(res)
               dispatch(getProductsSuccess(res.data))
           })
           .catch(err => {

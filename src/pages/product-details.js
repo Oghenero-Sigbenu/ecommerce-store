@@ -1,24 +1,28 @@
 import React, {  useEffect } from 'react';
 import ProductCards from "../components/productCard";
 import { useDispatch, useSelector } from "react-redux";
-import {getProducts} from "../actions/products";
+import {getProductById} from "../actions/products";
 import Spinner from "../components/Common/Spinner";
 
-function Products () {
+function Products ({match}) {
     const dispatch = useDispatch();
 
     useEffect(() => {
-      dispatch(getProducts())
+        const productId = match.params.id;
+        console.log(productId)
+      dispatch(getProductById(productId))
     }, []);// eslint-disable-next-line
   
-    const products = useSelector(state => state.product.products);
+    const product = useSelector(state => state.product.product);
     const isLoading = useSelector(state => state.product.isLoading);
     return(
         <div>
             {/* <h4>Products</h4> */}
             {isLoading ? <Spinner/> :
-                <ProductCards products={products} isLoading={isLoading}/> 
-            }
+            <><h4>{product.name}</h4>
+            <p>{product.description}</p>
+            <p>{product.price}</p>
+           </> }
         </div>
     )
 }
