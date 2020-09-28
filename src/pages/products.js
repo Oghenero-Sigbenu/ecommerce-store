@@ -9,7 +9,7 @@ function Products () {
 
     useEffect(() => {
       dispatch(getProducts())
-    }, []);// eslint-disable-next-line
+    },[]);// eslint-disable-next-line
   
     const products = useSelector(state => state.product.products);
     const isLoading = useSelector(state => state.product.isLoading);

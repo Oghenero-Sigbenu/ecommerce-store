@@ -16,6 +16,7 @@ import {
 } from "reactstrap";
 import "./NavbarApp.css"
 //actions
+
 class AppNavbar extends Component {
 	state = {
 		    isOpen: false
@@ -46,8 +47,8 @@ class AppNavbar extends Component {
             </NavItem>
 			{token ?
 				<NavItem>
-				<NavLink to="/add" className="nav-link">
-					Add Recipe
+				<NavLink to={`/cart/${user.id}`} className="nav-link">
+					Cart
 				</NavLink>
 				</NavItem>
 				: ""} 
@@ -57,9 +58,9 @@ class AppNavbar extends Component {
                       {user && user.username}
                     </DropdownToggle>
                     <DropdownMenu right >
-                      <DropdownItem >
+                      {/* <DropdownItem >
                         <NavLink to="/edit-profile" className="nav-link">Edit Profile</NavLink>
-                      </DropdownItem>
+                      </DropdownItem> */}
                       <DropdownItem divider />
                       <DropdownItem>
                         <NavLink to="/logout" className="nav-link">Logout</NavLink>

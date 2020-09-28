@@ -77,7 +77,7 @@ class Home extends Component {
         setTimeout(this.setNextImage, 10000);
     return (
         <div className="home">
-          <div className="bg"></div>
+          {/* <div className="bg"></div> */}
           <div className="banner-image">
               <img src={banner} alt="foody banner" />
           </div>

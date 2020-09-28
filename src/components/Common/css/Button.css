@@ -4,16 +4,15 @@
   margin: 20px auto;
   border-radius: 5px;
   /* width: 150px; */
-  background: none;
 }
 
 .btn-blk {
-  /* border: 1px solid black; */
   color: white;
+  background:rgb(38, 102, 9) !important;
+
 }
 
 .btn-blk:hover {
-  /* background: black; */
   color: white;
 }
 

@@ -46,7 +46,7 @@ class Login extends Component {
     const {email, password} = this.state;
     return(
             <div className="">
-                <div className="box">
+                <div className="box1">
                   <div className="inner-box">
                 <h4>Login</h4>
                 <form autoComplete="off" onSubmit={this.submit}>

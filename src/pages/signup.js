@@ -58,7 +58,7 @@ class Signup extends Component {
     return (
       <AnimateInOut className={show ? 'slide-in-top one' : 'slide-out-left'}>
       <div>
-          <div className="box">
+          <div className="box1">
           <div className="inner-box">
         <h4>Register</h4>
         <form noValidate autoComplete="off" onSubmit={this.submit}>

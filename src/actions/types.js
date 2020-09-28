@@ -19,6 +19,7 @@ export const GET_PRODUCTS_FAILED = "GET PRODUCTS FAILED";
 
 //carts
 export const ADD_TO_CART = "ADD TO CART";
+export const UNKNOWN_CART = "UNKNOWN CART";
 export const REMOVE_ITEM_FROM_CART = "REMOVE ITEM FROM CART";
 export const GET_ALL_CART_ITEMS = "GET ALL CART ITEMS";
 export const GET_CART_ITEM_BY_ID = "GET CART ITEM BY ID";
